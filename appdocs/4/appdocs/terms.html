@@ -1,0 +1,598 @@
+<!-- This page is only used for BATTD -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Security-Policy" content="
+		style-src 'unsafe-inline' 'self' https://unpkg.com/ https://cdnjs.cloudflare.com https://cdn.datatables.net http://fonts.googleapis.com https://cdn.jsdelivr.net https://static-api.nkstatic.com/appdocs/;
+		img-src 'self' data: static.api.ninjakiwi.com *.ninjakiwi.com *.nkstatic.com https://s3.amazonaws.com https://static-api.nkstatic.com/appdocs/ https://ninjakiwi.zendesk.com/attachments/token/ https://p17.zdusercontent.com/attachment/869553/;
+		connect-src https://priority-static-api-staging.nkstatic.com/  https://fast-static-api.nkstatic.com/ https://priority-static-api.nkstatic.com/ https://static-api-staging.nkstatic.com/ https://static-api.nkstatic.com/ https://s3.amazonaws.com/nkapi-user-documents-dev/  https://hooks.slack.com *.ninjakiwi.com 'self' http://nkapi-user-documents-dev.s3.amazonaws.com nkapi-user-documents-staging.s3.amazonaws.com nkapi-user-documents-production.s3.amazonaws.com https://static-api.nkstatic.com;
+		font-src 'self' fonts.gstatic.com https://static-api.nkstatic.com/appdocs/;
+		script-src 'unsafe-inline' 'self' https://unpkg.com/ https://cdn.jsdelivr.net cdn.datatables.net https://static-api.nkstatic.com/appdocs/4/static/;
+		default-src 'self'">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+  @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.eot');
+        /* IE9 Compat Modes */
+        src: local(''),
+            url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
+            /* IE6-IE8 */
+            url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.woff2') format('woff2'),
+            /* Super Modern Browsers */
+            url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.woff') format('woff'),
+            /* Modern Browsers */
+            url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.ttf') format('truetype'),
+            /* Safari, Android, iOS */
+            url('https://static-api.nkstatic.com/appdocs/4/assets/assets/roboto-v29-latin-regular.svg#Roboto') format('svg');
+        /* Legacy iOS */
+    }
+
+  body {
+ padding:0em;
+font-family:roboto,sans-serif
+}
+  pre { 
+ padding: 5px;
+ background-color:rgba(0,0,0,0.1);
+}
+code 
+{
+ 
+}
+
+a {
+color: #fff;
+}
+</style>
+<script src="terms_files/81273431865034ef2164607cfa26d14b_showdown_min.js"></script>
+<script>
+
+//https://www.w3schools.com/xml/ajax_intro.asp
+function loadDoc(url) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    var converter = new showdown.Converter(),
+    html      = converter.makeHtml(this.responseText);
+    document.getElementById('main').innerHTML = html;
+    }
+  };
+  xhttp.open("GET",url, true);
+  xhttp.send();
+}
+if(window.location.search.indexOf("?file=") !== -1){
+    loadDoc("https://static-api.nkstatic.com/appdocs/4/appdocs/"+ window.location.search.split("file=").pop() );
+}
+else 
+{
+   loadDoc("https://static-api.nkstatic.com/appdocs/4/appdocs/tos_en.md");
+}
+
+
+if(window.location.hash !== ""){
+  var hash = decodeURIComponent(window.location.hash.substring(1)).split("|"); 
+  for(let i = 0;i < hash.length;i++){
+  var sheet = window.document.styleSheets[0];
+  sheet.insertRule(hash[i], sheet.cssRules.length);
+}
+}
+
+</script>
+</head>
+<body> 
+<div id="main"><h3 id="termsofservice">Terms of Service</h3>
+<p>Last Updated:  April 5, 2024</p>
+<p><strong>Latest Updates</strong></p>
+<p>For ease of access and understanding, recent revisions are 
+highlighted here, but please take the time to read this full Terms of 
+Service agreement as this is a binding legal agreement between you and 
+Ninja Kiwi Limited.</p>
+<ul>
+<li>In compliance with California’s Consumer Privacy Act, we have added 
+clarity in our Privacy Policy about how California residents (or their 
+parents or guardians) can request access to information stored and/or to
+ delete that information via request to privacy@ninjakiwi.com.</li>
+<li>In compliance with Europe’s General Data Protection Regulation 
+(GDPR), we have updated our Ninja Kiwi Login to explicitly ask whether 
+players are under 16; in the case that players are under that age limit,
+ no personally identifiable information (PII) will be requested during 
+login and other PII such as IP address will not be stored. Further GDPR 
+information is also located in our Privacy Policy.</li>
+<li>This Terms of Service and the Ninja Kiwi Privacy Policy are 
+addressed to players at least 16 years of age. If a player is below the 
+age of 16, they must have a parent or guardian read and accept these 
+Terms of Service and the Ninja Kiwi Privacy Policy on their behalf.</li>
+<li>References to the game Battle for the Galaxy have been removed as 
+this game has not been published by Ninja Kiwi for more than a year. The
+ Terms of Service and Privacy Policy in effect as of any use of Battle 
+for the Galaxy as published by Ninja Kiwi remain binding.</li>
+<li>Ninja Kiwi has updated its Fan Content terms to make it clearer and 
+easier for streamers and content creators to work with Ninja Kiwi games.</li>
+<li>Ninja Kiwi has updated terms specific to the player creator revenue sharing available within Bloons TD 6.</li>
+</ul>
+<p><strong>Introduction/Binding Agreement</strong></p>
+<p>These Terms of Service govern your access to and use of the 
+Application and/or Ninja Kiwi Login, including any content, information,
+ products, related communications, or related Services. This is a 
+binding legal agreement between you and Ninja Kiwi Limited. (“Ninja 
+Kiwi”) and applies to you in relation to any interaction with the 
+Application, Ninja Kiwi Login, Services, or any related communications. 
+Your access and use of the Application, Ninja Kiwi Login, or Services or
+ participation in related communications signifies your acceptance of 
+these Terms of Service and agreement to the collection, storage, review,
+ and use of your information; this information will be stored on 
+servers, some of which may be located in the United States. If you do 
+not accept these Terms of Service and the Ninja Kiwi Privacy Policy in 
+their entirety, you may not access, engage, or in any way use the 
+Application, Ninja Kiwi Login, or any related Services. Ninja Kiwi 
+reserves the right at any time to modify, discontinue, or terminate the 
+Application, Ninja Kiwi Login, or Services, or modify these Terms of 
+Service or the Privacy Policy at its sole discretion; when these Terms 
+of Service or the Privacy Policy are updated they will be posted here 
+and updated to the Ninja Kiwi blog and social channels 
+(https://www.facebook.com/ninjakiwigames/ and 
+https://twitter.com/ninjakiwigames). For players under the age of 18, we
+ appreciate you reading these terms to understand your responsibilities 
+as a player and member of the Ninja Kiwi community, but you must review 
+these Terms of Service with your parent or guardian and your parent or 
+guardian must agree to these Terms of Service on your behalf.</p>
+<p><strong>Eligibility and Use</strong></p>
+<p>By your (or your child’s in the case of a parent or guardian) access 
+and use of the Application, Ninja Kiwi Login, Services, or 
+Application-related communications you signify your agreement to the 
+following:<br>
+<strong>a</strong>. You affirm that you are at least 16 years of age and
+ that you are fully able and competent to comply with and adhere to 
+these Terms of Service. Alternatively or in conjunction, you affirm that
+ you are the parent or guardian of a player under the age of 16 for whom
+ you take full responsibility for their compliance with these Terms of 
+Service;<br>
+<strong>b</strong>. For Ninja Kiwi Login, players under the age of 16 in
+ the European Union or under 13 in all other territories, in order to 
+comply with the Children’s Online Privacy Protection Act (COPPA) and 
+Europe’s General Data Protection Regulation (GDPR) standards, must 
+signify their true age by selecting the “No, I am under 16”; 
+<strong>c</strong>. For Ninja Kiwi Facebook Applications, you verify 
+that you have a legitimate account in accordance with Facebook’s Terms 
+of Service, and you will prevent anyone under the age of consent in your
+ country from using your Account;<br>
+<strong>d</strong>. You shall use the Application, Ninja Kiwi Login, or 
+Services only for non-commercial purposes, and you shall not solicit 
+services, advertise, or send repetitive or spam messages;<br>
+<strong>e</strong>. If you access the Application, Ninja Kiwi Login, or 
+Services from a social networking site or any other website you will 
+comply with the terms of service of that site along with these Terms of 
+Service;<br>
+<strong>f</strong>. You may not enter, submit, or upload 
+player-generated content (including but not limited to Ninja Kiwi Login 
+player names, forum posts, blog posts, chat, character or other in-game 
+names, game editor content, Content Browser content, Map Editor content,
+ or any video or streamed content where a core visual or topical content
+ is Ninja Kiwi  or its games) that is defamatory, harassing, 
+threatening, bullying, bigoted, hateful, violent, obscene, pornographic,
+ or that harms or can reasonably be expected to harm any person or 
+property, and you understand that any such activity will lead to 
+suspension of your Ninja Kiwi Account;
+<strong>g</strong>. You shall not use the Application, Ninja Kiwi Login, or Services to engage in any illegal activity;<br>
+<strong>h</strong>. You are responsible for safeguarding and maintaining
+ the confidentiality of your Account information, you will not disclose 
+that information, and you will not disclose personally identifiable 
+information unless as part of the setup of your Ninja Kiwi Login account
+ or via Facebook, Google, Apple, or Twitch permissions. You shall not 
+share personally identifiable information or account information with 
+other players or community members. You agree that you are entirely and 
+solely responsible for all access and use of your Account, whether or 
+not you authorized it and whether or not you were aware of it. Please 
+review our Privacy Policy for more information about our collection and 
+limited use of personally and non-personally identifiable information. 
+For players of the Red Reign game on Apple Arcade, please review the Red
+ Reign Privacy Policy. For players of the Bloons TD 6+ game on Apple 
+Arcade, please review the Bloons TD 6+ Privacy Policy;<br>
+<strong>i</strong>. You shall not share, copy, clone, gift, trade, 
+barter, sell, or in any other way exchange your Ninja Kiwi Login or game
+ data with any other person or entity, and you understand that any such 
+activity will lead to segregation and/or suspension of your Ninja Kiwi 
+account;<br>
+<strong>j</strong>. You shall not use alternative Ninja Kiwi Login 
+accounts in any way that enables or supports tampering with other 
+players’ multiplayer experiences, specifically multiplayer leaderboard 
+competitions, for instance joining other Clans, Parties, or Teams for 
+the purpose of blocking other players from joining and/or to weaken that
+ Clan’s, Party’s, or Team’s scoring; and<br>
+<strong>k</strong>. You will only connect to the Application, Ninja Kiwi
+ Login, and Services through legitimate, unmodified clients for the 
+purposes of any multiplayer or competitive play and rewards, including 
+public co-op game sessions, all leaderboards, and all player vs player 
+game sessions, and you understand that any such modified activity will 
+lead to the automated or manual segregation and/or suspension of your 
+Ninja Kiwi account. For clarity use of modified clients is tolerated for
+ private single player use and private co-op games but you understand 
+that such use may also lead to automated segregation and/or suspension 
+of your Ninja Kiwi account, which you may appeal by contacting the 
+community management team at 
+https://support.ninjakiwi.com/hc/en-us/requests/new.  </p>
+<p><strong>Limited License; Content; Ownership</strong></p>
+<p>Subject to your agreement to and compliance with these Terms of 
+Service, Ninja Kiwi grants you a non-exclusive, non-transferable, 
+non-sublicensable, revocable limited license to access, play, and 
+otherwise use the Ninja Kiwi Applications and Services provided such 
+access, play, customize characters, create in-game content using in-game
+ editors and tools, and use is for your own entertainment and not for 
+commercial purposes. Ninja Kiwi makes special provisions for commercial 
+performance play on popular platforms such as YouTube and Twitch as 
+covered under Fan Content below.
+Except where otherwise noted, the Application, Ninja Kiwi Login, 
+Services, related communications, and all content including but not 
+limited to graphics, audio, text, user interface, characters, 
+animations, buttons, icons, thumbnails, reward systems, quest systems, 
+downloads, game data, game design, events, content editors and their 
+components, and player created content using content editors such as but
+ not limited to the Bloons TD 6 Content Browser Challenge Creator, 
+Odyssey Creator, and Map Editor, are the property of Ninja Kiwi and are 
+protected by United States, New Zealand, and international copyright, 
+trademark, and intellectual property laws. You may access, engage, and 
+use the Application, Ninja Kiwi Login, or Services as they are presented
+ to you and in accordance with these Terms of Service. Without express 
+written consent from Ninja Kiwi, any attempts to modify, hack, cheat, 
+autoplay, bot, datasniff, data capture, interfere with, disrupt, 
+reproduce, frame, copy, post, sell, scrape, transmit, clone accounts, 
+clone characters, or create related or derivative works is expressly 
+prohibited and immediately terminates the limited license granted and 
+will lead to the automated or manual segregation and/or suspension of 
+your account; any attempts to promote such proscribed usage through 
+video, stream, social network, public display, digital communications, 
+or any other mass audience channel is expressly prohibited and 
+immediately terminates the limited license granted and will lead to the 
+segregation and/or suspension of your account.</p>
+<p>Any and all content including but not limited to bloons, monkeys, 
+buildings, towers, characters, environments, maps, worlds, creatures, 
+items, pets, homes, robots, tools, weapons, powers, powerups, upgrades, 
+equipment, display areas, user interface, virtual currency, or any other
+ virtual items or organized display or use of any such items remains the
+ sole and exclusive property of Ninja Kiwi. No amount of customization, 
+stat changes, item changes, configuration, leveling up, decorating, or 
+in any other way modifying game elements through use of the Application,
+ Ninja Kiwi Login, Ninja Kiwi Services, or any other means conveys any 
+ownership or alteration of the limited license to use; all elements 
+remain the sole and exclusive property of Ninja Kiwi.</p>
+<p>Where Ninja Kiwi games provide in-game tools such as but not limited 
+to the Bloons TD 6 Content Browser Challenge Creator, Odyssey Creator, 
+and Map Editor that allow players to modify, customize, and otherwise 
+manipulate game content to create player-generated content for display 
+and play within or outside Ninja Kiwi games whether private or public, 
+all such content remains the exclusive property of Ninja Kiwi Limited, 
+and any use of such tools to create and display content is done on a 
+voluntary basis without any right, claim, or interest to compensation of
+ any kind, except as defined specifically for content creator and player
+ creator revenue sharing as detailed in the Fan Content and Player 
+Creator Content and Revenue Sharing sections below.</p>
+<p>Ninja Kiwi reserves the right at its sole discretion and without 
+notice to make changes, modifications, additions, deletions, copies, or 
+any other alterations and edits to any and all content elements, 
+including but not limited to their appearance, animation, statistics, 
+behavior, performance, cost, component parts, display, visibility, or 
+in-game value. Ninja Kiwi reserves the right at its sole discretion and 
+without notice to delete, suspend, or modify any item, feature, account 
+or the entire Application, Ninja Kiwi Login, or Services. In the event 
+that access to the Application, Ninja Kiwi Login, or Services is 
+terminated, all virtual items, virtual currency, and player’s game 
+progress is forfeited and you will not receive any compensation, 
+monetary or otherwise, for any of these elements forfeited. Any 
+suspension or termination of your access to the Application, Ninja Kiwi 
+Login, or Services will not waive or diminish your obligations under 
+these Terms of Service (including but not limited to ownership, 
+indemnification, and limitation of liability).</p>
+<p><strong>Fan Content</strong></p>
+<p>Ninja Kiwi supports the maintenance and growth of healthy, 
+non-sponsored communities, fan-art channels, and content 
+creator/streamer ecosystems and seeks to encourage and support fan 
+creations that use or perform our IP, as long as they adhere to these 
+Terms.</p>
+<p>Fan Content includes but is not limited to art, animation, memes, 
+crafts, game designs, game mechanics, stories, ‘ships, music, videos, 
+merchandise, printed material, and any other creation that uses Ninja 
+Kiwi IP, as well as any performance of Ninja Kiwi IP, including but not 
+limited to video content creation and streaming as appears on platforms 
+like Twitch and YouTube. Fan Content must comply with each of the 
+following requirements; any fan content that violates the following 
+requirements is prohibited :
+a. Streamers and content creators may monetize their performances of 
+Ninja Kiwi IP through platform (e.g. Twitch or YouTube) ads, platform 
+currencies, and other standard platform methods provided the performance
+ of the Ninja Kiwi IP must adhere to all other conditions of these 
+Terms;
+b. Fan Content other than streamer and content creator performances on 
+major platforms as described at (a) above must have no commercial and/or
+ monetary objective or implementation;
+c. Fan Content must not be posted as stand alone products whether free 
+or for purchase to commercial platforms such as app stores (e.g. Apple 
+App Store, Google Play Store, Steam) or content stores (e.g. Spotify, 
+Bandcamp, Printful, Redbubble, Zazzle, Etsy). For clarity, this does not
+ restrict streamers and content creators from posting their Fan Content 
+to content creator platforms available on app stores (e.g. Twitch, 
+Youtube, and Facebook);
+d. Fan Content must not use the Ninja Kiwi company or game logos or 
+trademarks and must not be presented in any way that could cause people 
+or search algorithms to react as if it was an official Ninja Kiwi 
+production or post;
+e. Fan Content must not derogate Ninja Kiwi, Ninja Kiwi games or 
+services, or Ninja Kiwi staff or otherwise cause damage to the 
+reputation, public perception, or goodwill of Ninja Kiwi or its games or
+ brands, as determined solely by Ninja Kiwi; 
+f. Fan Content must not be used to communicate, link, distribute, or 
+promote cheats or hacks to any Ninja Kiwi games;
+g. Fan Content must not be obscene, sexually explicit, defamatory, 
+hateful, or harmful to others, as determined solely by Ninja Kiwi;
+g. You acknowledge that Ninja Kiwi games appeal to broad audiences that 
+may include children and as such Fan Content should be appropriate for 
+broad audiences or gated behind sufficient warning for mature content as
+ provided by performance platforms, and you further acknowledge your 
+understanding that Ninja Kiwi will not promote any Fan Content that is 
+not appropriate for broad audiences.</p>
+<p>If you have a channel on YouTube, Twitch, Facebook, or another 
+platform and have any questions about media kits, game information, or 
+just want to say hello, please get in touch with us at 
+streamers@ninjakiwi.com; there is no obligation or requirement to 
+contact Ninja Kiwi, but we do like to hear from people finding fun and 
+value creating content with Ninja Kiwi IP in accordance with these 
+Terms.</p>
+<p>Content creators and streamers can also participate in a revenue 
+share exchange managed by Nexus.gg and subject to their terms: 
+https://www.nexus.gg/legal/terms-of-use .</p>
+<p>As a standard practice, Ninja Kiwi does not accept Fan Content 
+submitted directly to Ninja Kiwi for the Application, Ninja Kiwi Login, 
+and/or Services of any other Ninja Kiwi game or property. From time to 
+time, Ninja Kiwi may run promotions based on Fan Content for the purpose
+ of community engagement. Whether part of a promotion or unsolicited, if
+ you make any Fan Content submissions to Ninja Kiwi via any delivery 
+mechanism including but not limited to blogs, forums, emails, letters, 
+videos, community sites, or social networking posts and comments, you 
+acknowledge your understanding that Ninja Kiwi is in the business of 
+making games and is constantly creating game ideas, features, concepts, 
+technologies, designs, mechanics, and all other elements for 
+Applications or Services and likely has ideas that are similar to or 
+identical to your submissions. In addition, you acknowledge that you 
+will receive no compensation or credit and that your submission is not 
+confidential. By communicating the submission, you warrant that you are 
+the originator of the idea and that it does not infringe on the rights 
+of any other person or entity, and you grant Ninja Kiwi a worldwide, 
+royalty-free, non-exclusive perpetual right and license to use, modify, 
+translate, publish, perform, produce derivative works, and in any other 
+way manifest the submission without any liability, payment, or expense. 
+Ninja Kiwi at its sole discretion and where possible will make efforts 
+to acknowledge promotional Fan Content submissions that are 
+reinterpreted and/or reauthored by Ninja Kiwi and subsequently 
+incorporated into any Applications or Services.</p>
+<p><strong>Player Creator Content and Revenue Sharing</strong></p>
+<p>Player Creator Content is defined as any content created within any 
+Ninja Kiwi game or service that can then be shared with other players 
+for their use, performance, and enjoyment. The main examples of Player 
+Created Content are the Challenge, Odyssey, and Map creations within 
+Bloons TD 6. All such Player Created Content is bound by these Terms.</p>
+<p>While all Player Creator Content creation is voluntary and is done 
+without any right, claim, or interest in compensation of any kind, Ninja
+ Kiwi is facilitating a platform-specific revenue share from In App 
+Purchases made from players who are actively playing a Player Creator’s 
+Challenge, Odyssey, and/or Map creations; this revenue share is 
+conditional on the Player Creator:
+a) creating a Nexus.gg account;
+b) linking that Nexus account to their Ninja Kiwi player account, and;
+c) accepting the Nexus.gg terms: 
+https://www.nexus.gg/legal/terms-of-use.
+For additional visibility, the Nexus.gg terms restrict revenue share 
+participation to players 18 years of age and older.</p>
+<p>Because IAPs and/or IAP validation are not available on all platforms
+ where Bloons TD 6 is distributed, players on Apple Arcade, Netflix, 
+Amazon App Store, and Windows Store cannot give Accolades. Because of 
+platform specific data constraints, player creators on Apple Arcade and 
+Netflix cannot receive revenue sharing.</p>
+<p>Revenue share amounts are subject to change at Ninja Kiwi’s sole 
+discretion and without notice, but reasonable efforts will be made to 
+update the current revenue share percentage within the Accolades Store 
+information panel when playing Bloons TD 6 while connected to the 
+internet.</p>
+<p>Player creator data related to revenue sharing will be stored for six
+ months from the time of content creation to allow players to take their
+ time to register with Nexus.gg and link their accounts. Potential 
+revenue share older than six months before Nexus.gg registration will 
+not be stored or claimable.</p>
+<p><strong>Merchandise</strong></p>
+<p>Ninja Kiwi provides IP related merchandise for sale at 
+https://store.ninjakiwi.com, and this merchandise is sold in accordance 
+with Store Policies available at 
+https://store.ninjakiwi.com/pages/store-policies.</p>
+<p>Ninja Kiwi supports and encourages fan creativity in the creation of 
+Fan Content merchandise provided it adheres to all of the requirements 
+of Fan Content. Making limited-run (50 or less) hand-authored prints, 
+t-shirts, stickers, and other merchandise for non-commercial 
+distribution to friends and other fans is permitted so long as they 
+adhere to all of the requirements of Fan Content and are not similar to 
+any items listed at https://store.ninjakiwi.com.</p>
+<p><strong>Virtual Currency and Premium Items</strong></p>
+<p>Through use of the Application, Ninja Kiwi Login, or Services you may
+ accumulate virtual currency and virtual items whose sole use is within 
+the Application, Ninja Kiwi Login, or Services where they were obtained.
+ Ninja Kiwi engages with industry leading platform storefronts, 
+including but not limited to Apple’s App Store, Google Play, Amazon’s 
+App Store, and Steam, and with reputable third party services to allow 
+purchase of virtual currency with real world currency, and Ninja Kiwi 
+reserves the right to enable or disable any in-game acquisition of or 
+real world purchase of virtual currency. Ninja Kiwi reserves the right 
+at its sole discretion and without notice to change the rate of exchange
+ for in-game or purchased virtual currency or the cost of any in-game 
+item. Use of the platform storefront or third party service for purchase
+ of virtual currency is governed by the terms of use of that service and
+ any issues with that transaction are to be resolved with that platform 
+storefront or third party service according to their support procedures.
+ Ninja Kiwi will offer support assistance in contacting and attempting 
+to resolve such platform storefront or third party service issues if you
+ email support@ninjakiwi.com.
+You understand and acknowledge that Ninja Kiwi is not required to 
+provide a refund for any currency or other item for any reason. Further,
+ you understand and acknowledge that you will receive no money or other 
+compensation for unused virtual currency, premium items, or any other 
+game resources when an account is closed, when an account is suspended, 
+when an Application or Service is under maintenance, offline, closed, or
+ otherwise unavailable, or when your data has been lost, corrupted, 
+deleted, or otherwise made unavailable. Ninja Kiwi reserves the right at
+ its sole discretion and without notice to remove, suspend, or close any
+ Application or Service without any compensation to you.</p>
+<p>Parents and guardians acknowledge that your children and wards may 
+purchase virtual currency only with your supervision and authorization. 
+We encourage all players, regardless of age, to understand their device 
+settings and limit or restrict in-app purchasing on their device if they
+ do not wish to engage with in-app purchase features. Additional 
+information on restricting in-app purchases is available here:
+https://support.google.com/googleplay/answer/1626831
+https://support.apple.com/HT204396
+https://www.amazon.com/gp/help/customer/display.html</p>
+<p>Virtual currency and items are non-transferrable to any other 
+Application, Service, website, or anywhere else. Virtual currency, 
+virtual items, and player progress are not redeemable for any monetary 
+value from Ninja Kiwi, any third party service, or any other entity. You
+ agree not to sell, exchange, or attempt to transfer virtual currency, 
+virtual items, or player progress, and any such actions will not be 
+tolerated by Ninja Kiwi and will lead to suspension of your Ninja Kiwi 
+account.</p>
+<p>Whether you obtained virtual currency and virtual items through use 
+of the Application, Ninja Kiwi Login, and Services, by purchase via a 
+third party service, or by interacting with advertisements, you have no 
+right or title to any virtual currency, virtual items, or any other game
+ assets.
+You agree to pay all fees and related taxes incurred by you or anyone 
+using an account that is registered to you. You agree to pay all 
+internet, carrier, device, power, repair, replacement, data, bandwidth 
+and any other fees and related taxes related to the operation of any 
+equipment or devices required to access any Application or Service.</p>
+<p><strong>Bloons TD 5 Deluxe Terms of Sale</strong></p>
+<p>The downloadable PC desktop Application, “Bloons TD 5 Deluxe,” is no 
+longer for sale but these Terms still apply for players of the game. 
+There are no physical goods comprising or associated with the Bloons TD 5
+ Deluxe Application. Customers must have access to the internet to 
+download and to validate their serial key and complete the installation;
+ customers are solely responsible for their internet access and any 
+related fees. The Bloons TD 5 Deluxe Application may only be used 
+according to the Ninja Kiwi End User License Agreement that must be 
+accepted during the installation process.</p>
+<p><strong>Third Party Links</strong></p>
+<p>The Application and Services may link to or rely on third party 
+websites or resources. Ninja Kiwi is not responsible or liable for the 
+availability or accuracy of such websites or resources. You acknowledge 
+sole responsibility for and assume all risk arising from your use of any
+ such websites or resources.</p>
+<p><strong>Electronic Communications</strong></p>
+<p>You consent to receive email communications from the Ninja Kiwi 
+community management team if you create a support ticket via an 
+Application or via support@ninjakiwi.com. Ninja Kiwi endeavors to 
+respond to customer support tickets, app store reviews, and community 
+posts in a timely and appropriate manner, but any such or other 
+communications contact with Ninja Kiwi does not guarantee a reply or in 
+any way impact the Disclaimer of Warranties or any other aspect of these
+ Terms of Service.</p>
+<p>Ninja Kiwi does not use emails for unsolicited marketing, but does 
+reserve the right to use and you consent to receive emails for critical 
+communications such as legal notices or announcements. Any marketing or 
+game status emails would be opt-in only, and your opt in or out will not
+ affect your access to the Application, Ninja Kiwi Login, Services, or 
+related communications.</p>
+<p><strong>Ninja Kiwi Competitions</strong></p>
+<p>By submitting a Fan Content entry for any competition run by, or in 
+association with Ninja Kiwi, you fully and unconditionally agree to and 
+accept these additional rules, terms, and conditions:
+a. You grant Ninja Kiwi a worldwide, royalty-free, non-exclusive 
+perpetual right and license to use, reproduce, modify, publicly display,
+ perform, produce derivative works of, or otherwise use any entry in any
+ and all media, whether now known or hereafter existing, throughout the 
+world for any and all purposes without compensation to you of any kind;
+b. You represent and warrant that your entry does not infringe on any 
+copyright, trademark, property rights, or any other rights of any third 
+party and that you have the right to transfer the entry to Ninja Kiwi 
+free of any claims. Ninja Kiwi shall have no liability for any alleged 
+or actual infringement of a third-party's rights in connection with any 
+entry;
+c. You agree that you have not or will not receive any compensation or 
+other consideration for your entry. Ninja Kiwi may in its sole 
+discretion and without notice choose to award fan merchandise, including
+ but not limited to t-shirts, stickers, badges, mouse pads, and virtual 
+currency. All such items have no cash value and are purely for 
+promotional purposes. Ninja Kiwi is under no obligation to award any fan
+ merchandise regardless of the number or types of entries;
+d. You further agree to release and hold harmless Ninja Kiwi and its 
+licensors, distributors, agents, shareholders, directors, officers, 
+employees and representatives from and against any and all losses, 
+damages, rights, claims, and actions of any kind arising in connection 
+with your participation in the contest, including, not limited to, 
+claims based on publicity rights, defamation, or invasion of privacy. 
+All federal, state, local, provincial and municipal laws and regulations
+ apply. Void where prohibited by law.</p>
+<p><strong>Disclaimer of Warranties</strong></p>
+<p>The Application, Ninja Kiwi Login, and/or Services are for use “as 
+available” and “as is” and without any warranty, regardless of the 
+amount of time and/or money you have spent on the Application, Ninja 
+Kiwi Login, and/or Services. Use of the Application, Ninja Kiwi Login, 
+and/or Services are at your sole risk and sole discretion, and you are 
+solely responsible for any damage to your computer system or smart 
+device, for any device performance issues, and for any loss of data. 
+Ninja Kiwi disclaims any warranty express or implied regarding title, 
+merchantability, availability, fitness, freedom from errors, error 
+correction, and timeliness of communication or error correction. Ninja 
+Kiwi does not warrant that the Application, Ninja Kiwi Login, and 
+Services are bug free, error free, or virus free. You are solely 
+responsible for how you spend your time and money. No communication 
+whether written or oral shall supersede this Disclaimer of Warranties.</p>
+<p><strong>Limitation of Liability; Indemnification; Force Majeure</strong></p>
+<p>In no event will Ninja Kiwi, its directors, or its employees be 
+liable for any damages whatsoever and without limitation, whether they 
+be direct, indirect, punitive, commercial, intangible, or of any other 
+type, arising from the use of the Application, Ninja Kiwi Login, or 
+Services, regardless of whether the damages are foreseeable, even if 
+Ninja Kiwi, its directors, and/or its employees have been advised of the
+ possibility of such damages. To the extent that the above limitation 
+applied to its fullest extent in applicable jurisdiction assigns 
+liability, that cumulative liability shall not exceed US$10.</p>
+<p>You agree to indemnify and hold harmless Ninja Kiwi, its directors, 
+employees, partners, and service partners from any claim and demand, 
+including any attorney’s fees, made by any party due to your use of the 
+Application, Ninja Kiwi Login, or Services, your violation of these 
+Terms of Service, or your violation of applicable law or the rights of 
+another party.</p>
+<p>Ninja Kiwi shall not be liable for any damages, disruptions, or 
+claims related to its Application, Ninja Kiwi Login, or Services that 
+arise from acts of nature, weather, war, social upheaval, economic 
+upheaval, unavailability of utilities or resources, terrorism, the 
+public enemy, any government or public authorities requirements, or any 
+other event outside of Ninja Kiwi’s control.</p>
+<p><strong>Supplemental Terms for PlayStation®</strong></p>
+<p>For Purchases in PlayStation™ Store in North America</p>
+<p>Purchase and use of items are subject to the Network Terms of Service
+ and User Agreement. This online service has been sublicensed to you by 
+Sony Interactive Entertainment America.</p>
+<p>For Purchases in PlayStation™ Store in Europe</p>
+<p>Any content purchased in an in-game store will be purchased from Sony
+ Interactive Entertainment Network Europe Limited ("SIENE") and be 
+subject to PlayStation™Network Terms of Service and User Agreement which
+ is available on the PlayStation™Store. Please check usage rights for 
+each purchase as these may differ from item to item. Unless otherwise 
+shown, content available in any in-game store has the same age rating as
+ the game.</p>
+<p><strong>General</strong></p>
+<p>These Terms of Service shall be governed by and interpreted in 
+accordance with the laws of New Zealand. Any legal action or proceeding 
+will be brought exclusively in courts located in Auckland, New Zealand 
+and you consent to this jurisdiction. If any provision in these Terms of
+ Service is held to be invalid, the remaining provisions shall survive 
+in full effect. These Terms of Service are personal to you and imply no 
+partnership, employment, or any other business relationship between you 
+and Ninja Kiwi, and you may not transfer, assign, or delegate these 
+Terms of Service to any other party with the exception of a parent or 
+guardian taking responsibility for these Terms of Service for their 
+child or ward. No delay, failure to communicate, or failure to take 
+action in relation to any of these Terms of Service shall invalidate any
+ provision of these Terms of Service.</p>
+<p><strong>Contact</strong></p>
+<p>You may address comments or questions to the following email address: <a href="mailto:support@ninjakiwi.com">support@ninjakiwi.com</a>.</p></div>
+
+</body></html>
